@@ -32,7 +32,7 @@ describe("NFTMarketplace", function () {
     it("Should track name and symbol of the nft collection", async function () {
       // This test expects the owner variable stored in the contract to be equal
       // to our Signer's owner.
-      const nftName = "DApp NFT"
+      const nftName = "Hanene DApp NFT"
       const nftSymbol = "DAPP"
       expect(await nft.name()).to.equal(nftName);
       expect(await nft.symbol()).to.equal(nftSymbol);
@@ -102,6 +102,8 @@ describe("NFTMarketplace", function () {
     });
 
   });
+
+
   describe("Purchasing marketplace items", function () {
     let price = 2
     let fee = (feePercent/100)*price
